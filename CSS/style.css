@@ -1,0 +1,333 @@
+p{
+    text-align: center;
+    display: block;
+}
+body{
+    background-color: #a9c0cb;
+}
+header{
+    background-color: #F3F5FC;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 7;
+}
+#logo{
+    margin: 0 auto;
+    width: 180px;
+    height: 96px;
+    float: left;
+}
+#respuesta{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    margin-top: -150px;
+}
+#output{
+    width: 98%;
+    height: 550px;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 28px;
+    border: none;
+    outline: none;
+
+}
+
+.Alura{
+    width: 90%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 75px;
+    padding-right: 0px;
+}
+
+#titulo{
+    width: 400px;
+    height: 100px;
+    float: left;
+    z-index: 100;
+}
+.titulo{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    padding-top: 25px;
+}
+#header{
+    width: 700px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+}
+#caja{
+    width: 1440px;
+    height: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+#texto_entrada{
+    width: 800px;
+    height: 250px;
+    border-radius: 50px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.input{
+    border:0;
+    outline:none;
+    width:100%;
+    height:100%;
+    font-size:28px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #a9c0cb;
+}
+
+#texto_salida{
+    float: left;
+    width: 373px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+#img_buscando{
+    margin-top: 250px;
+    z-index: 1;
+    position: relative;
+    
+}
+.buscando{
+    width: 90%;
+    padding: 19px;
+    z-index: 1;
+    position: relative;
+}
+.mensaje{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+#botones{
+    width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-top: -150px;
+    margin-right: auto;
+    float: left;
+}
+#alerta{
+    position: relative;
+    width: 229px;
+    height: 18px;
+    background-color: #F3F5FC;
+    border-radius: 20px;
+    margin-left: 200px;
+    z-index: -1;
+}
+.span{
+    margin-left: 10px;
+}
+.alerta{
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 13px;
+    margin-top: -12px;
+    
+}
+#do{
+    width: 300px;
+    height: 80px;
+    background-color: #374f6b;
+    margin-top: 25px;
+    margin-left: 200px;
+    border-radius: 25px;
+}
+#undo{
+    width: 300px;
+    height: 80px;
+    background-color: #cbe3ee;
+    margin-top: -80px;
+    margin-left: 550px;
+    border-radius: 25px;
+    border: 2px solid #374f6b;
+}
+#copiar{
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 1111px;
+    margin-top: -85px;
+    border: 2px solid #070d0d;
+    border-radius: 25px;
+}
+.do{
+   color: #fff;
+   background-color: #374f6b;
+   outline: none;
+   border: 0;
+   font-family: 'Chakra Petch', sans-serif;
+   font-size: 35px;
+   width: 100%;
+   height: 100%;
+   border-radius: 25px;
+}
+.do:hover{
+    color: #000;
+    background-color: #cbe3ee;
+    border: 2px solid #374f6b;
+    cursor: pointer;
+}
+.undo{
+    background-color: #cbe3ee;
+    outline: none;
+    border: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 35px;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+}
+.undo:hover{
+    color: #fff;
+    background-color: #374f6b;
+    border: 2px solid #374f6b;
+    cursor: pointer;
+}
+.copy{
+    background-color: #fff;
+    outline: none;
+    border: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    border-radius: 25px;
+}
+.copy:hover{
+    color: #fff;
+    background-color: #900020;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+#footer{
+    width: auto;
+    height: 250px;
+    background-color: #070d0d;
+}
+.footer{
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+    #texto_salida{
+        margin-left: 50px;
+    }
+    #copiar{
+        margin-left: 888px;
+    }
+    #texto_entrada{
+        width: 700px;
+        margin-left: 25px;
+    }
+    #do{
+        width: 220px;
+    }
+    #undo{
+        width: 220px;
+        margin-left: 450px;
+    }
+    .do{
+        font-size: 25px;
+    }
+    .undo{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #caja{
+        height: 1200px;
+        width: 100%;
+    }
+    #texto_entrada{
+        width: 100%;
+        margin: 50px auto;
+    }
+    #texto_salida{
+        width: 70%;
+        margin: 200px 18%;
+        height: 500px;
+    }
+    #img_buscando{
+        margin: 0 auto;
+    }
+    .buscando{
+        width: 50%;
+        margin: 10px 22.5% ;
+    }
+    #botones{
+        margin-top: -850px;
+        width: 75%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #alerta{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #do{
+        margin-left: 20%;
+        margin-right: 13%;
+        width: 150px;
+    }
+    #undo{
+        margin-left: 60%;
+        margin-right: 30%;
+        height: 76px;
+        width: 150px;
+    }
+    .do{
+        font-size: 20px;
+    }
+    .undo{
+        font-size: 20px;
+    }
+    #copiar{
+        margin-top: 550px;
+        margin-left: 42%;
+    }
+    #respuesta{
+        margin-top: 28px;
+        height: 400px;
+    }
+    #output{
+        height: 450px;
+        outline: none;
+        border:none;
+        text-transform: lowercase;
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 850px) {
+    #do{
+        margin-left: 12%;
+    }
+    #undo{
+        margin-left: 55%;
+    }
+    #copiar{
+        margin-left: 38%;
+    } 
+}

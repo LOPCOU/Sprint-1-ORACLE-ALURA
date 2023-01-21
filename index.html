@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sprint #1</title>
+            <link rel="stylesheet" href="CSS/reset.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <div id="logo">
+                    <img src="IMG/Logo@2x.png" alt="Alura" class="Alura">
+                </div>
+                <div id="titulo">
+                    <p class="titulo">
+                        Encriptador de textos
+                    </p>
+                </div>
+            </div> 
+        </header>
+        <main>
+            <div id="caja">
+                <div id="texto_entrada">
+                    <input type="text" class="input"  placeholder="Ingrese el texto"  >
+                </div>
+                <div id="texto_salida">
+                    <div id="img_buscando">
+                        <div id="respuesta">
+                            <textarea name="output1" id="output" class="output" cols="30" rows="10"></textarea>
+                        </div>
+                        <img src="IMG/Muñeco.png" alt="Buscando" class="buscando" id="muñe">
+                        <p class="mensaje" id="msg">
+                            No se encontró ningun mensaje
+                        </p>
+                    </div>
+                </div>
+                <div id="botones">
+                    <div id="alerta">
+                        <span class="span">
+                            &#9888;
+                        </span>
+                        <p class="alerta">
+                           Solo letras minúsculas y sin acentos 
+                        </p>
+                    </div>
+                    <div id="do">
+                        <button class="do" onclick="but_do()">
+                            Encriptar
+                        </button>
+                    </div>
+                    <div id="undo">
+                        <button class="undo" onclick="but_undo()">
+                            Desencriptar
+                        </button>
+                    </div>
+                    <div id="copiar">
+                        <button class="copy" onclick="copiar()">
+                            Copiar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <p class="footer">
+                    Diseño realizado por <br>
+                    <strong>Miguel López</strong> <br>
+                    <br>
+                    ORACLE + ALURA<br>
+                    2023
+                </p>
+            </div>
+        </footer>
+        <script src="JS/script.js"></script>
+    </body>
+</html>
