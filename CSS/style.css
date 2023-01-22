@@ -220,9 +220,11 @@ header{
     cursor: pointer;
 }
 #footer{
-    width: auto;
+    width: 100%;
     height: 250px;
     background-color: #070d0d;
+    padding-right: 50px;
+    z-index: 3;
 }
 .footer{
     color: #fff;
@@ -328,6 +330,70 @@ header{
         margin-left: 55%;
     }
     #copiar{
-        margin-left: 38%;
+        margin-left: 35%;
     } 
+    .do:hover{
+        color: #fff;
+        background-color: #374f6b;
+        border: 4px solid #cbe3ee;
+    }
+    .undo:hover{
+        color: #000;
+    background-color: #cbe3ee;
+    border: 2px solid #374f6b;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .Alura{
+        padding-left: 100px;
+    }
+    .titulo{
+        margin-left: -100px;
+        font-size: 50px;
+        visibility: hidden;
+        }
+    .titulo::after{
+        content: "Encriptador";
+        display: block;
+        visibility: visible;
+        margin-top: -50px;
+    }
+    #copiar{
+        margin-left: 33%;
+    }
+    #do{
+        height: 40px;
+        width: 75%;
+    }
+    #undo{
+        height: 40px;
+        margin-top: 10px;
+        width: 75%;
+        margin-left: 11.5%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Alura{
+        padding-left: 50px;
+    }
+    .titulo{
+        margin-left: -200px;
+    }
+    #copiar{
+        margin-left: 28%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .Alura{
+        padding-left: 0;
+    }
+    .titulo{
+        margin-left: -300px;
+        font-size: 45px;
+        margin-top: 5px;
+    }
+    #copiar{
+        margin-left: 22%;
+    }
 }
